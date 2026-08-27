@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You — Irresistible Sales Formula</title>
+<meta name="description" content="Your order is confirmed. Download your ebook and bonuses, and join the WhatsApp community.">
+<meta property="og:title" content="Thank You — Irresistible Sales Formula">
+<meta property="og:description" content="Your order is confirmed. Download your ebook and bonuses now.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0F1B2D;
+    --navy-light:#16273D;
+    --navy-edge:#22344B;
+    --warm-white:#F7F3EC;
+    --paper:#FBF9F5;
+    --orange:#C4571F;
+    --orange-hot:#DE6B2C;
+    --ink:#1A2233;
+    --muted:#6E6459;
+    --muted-on-dark:#B9C2CE;
+    --line-on-dark:rgba(247,243,236,0.14);
+    --line-on-light:rgba(15,27,45,0.1);
+    --radius:4px;
+    --max:720px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:'Inter',sans-serif;
+    background:var(--warm-white);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{ font-family:'Fraunces',serif; font-weight:600; line-height:1.2; letter-spacing:-0.01em; }
+  a{ color:inherit; text-decoration:none; }
+  .wrap{ max-width:var(--max); margin:0 auto; padding:0 24px; }
+
+  .eyebrow{
+    font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--orange); margin-bottom:14px; display:inline-flex; align-items:center; gap:10px;
+  }
+  .eyebrow::before{ content:''; width:22px; height:1px; background:var(--orange); display:inline-block; }
+
+  .hero{
+    background:linear-gradient(175deg, var(--navy) 0%, var(--navy-light) 100%);
+    color:var(--warm-white);
+    padding:72px 0 56px;
+    text-align:center;
+  }
+  .check{
+    width:64px; height:64px; border-radius:50%;
+    background:rgba(196,87,31,0.15); border:1.5px solid var(--orange);
+    display:flex; align-items:center; justify-content:center;
+    margin:0 auto 26px;
+  }
+  .check svg{ width:30px; height:30px; color:var(--orange); }
+  .hero h1{ font-size:clamp(28px,5vw,38px); color:var(--warm-white); margin-bottom:16px; }
+  .hero p{ color:var(--muted-on-dark); font-size:16.5px; max-width:460px; margin:0 auto; }
+
+  section{ padding:56px 0; }
+  .section-head{ margin-bottom:28px; }
+  .section-head h2{ font-size:22px; color:var(--ink); }
+  .section-head p{ color:var(--muted); font-size:14.5px; margin-top:8px; }
+
+  .downloads{ background:var(--paper); }
+  .download-card{
+    display:flex; align-items:center; gap:18px;
+    background:var(--warm-white); border:1px solid var(--line-on-light);
+    border-radius:6px; padding:20px; margin-bottom:14px;
+  }
+  .file-icon{
+    flex:0 0 auto; width:46px; height:46px; border-radius:6px;
+    background:var(--navy); display:flex; align-items:center; justify-content:center;
+  }
+  .file-icon svg{ width:22px; height:22px; color:var(--orange); }
+  .download-info{ flex:1; min-width:0; }
+  .download-info h4{ font-size:15.5px; color:var(--ink); margin-bottom:2px; }
+  .download-info p{ font-size:12.5px; color:var(--muted); }
+  .btn-download{
+    flex:0 0 auto; padding:11px 20px; background:var(--orange); color:var(--warm-white);
+    border-radius:4px; font-size:13.5px; font-weight:600; white-space:nowrap;
+    transition:background 200ms ease;
+  }
+  .btn-download:hover{ background:var(--orange-hot); }
+  @media (max-width:520px){
+    .download-card{ flex-wrap:wrap; }
+    .btn-download{ width:100%; text-align:center; margin-top:6px; }
+  }
+
+  .community{ background:var(--navy); color:var(--warm-white); }
+  .community-card{
+    background:var(--navy-light); border:1px solid var(--line-on-dark);
+    border-radius:6px; padding:28px; text-align:center;
+  }
+  .community-card svg{ width:34px; height:34px; color:var(--orange); margin-bottom:14px; }
+  .community-card h3{ font-size:19px; color:var(--warm-white); margin-bottom:8px; }
+  .community-card p{ font-size:14px; color:var(--muted-on-dark); margin-bottom:22px; max-width:400px; margin-left:auto; margin-right:auto; }
+  .btn-primary{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--orange); color:var(--warm-white);
+    padding:14px 28px; border-radius:4px; font-weight:600; font-size:15px;
+    transition:background 200ms ease, transform 200ms ease;
+  }
+  .btn-primary:hover{ background:var(--orange-hot); transform:translateY(-2px); }
+
+  .next-steps{ background:var(--paper); }
+  .steps-list{ counter-reset:step; }
+  .step-item{
+    display:flex; gap:16px; align-items:flex-start;
+    padding:16px 0; border-bottom:1px solid var(--line-on-light);
+  }
+  .step-item:first-child{ border-top:1px solid var(--line-on-light); }
+  .step-num{
+    counter-increment:step; content:counter(step);
+    flex:0 0 auto; width:28px; height:28px; border-radius:50%;
+    border:1.5px solid var(--orange); color:var(--orange);
+    display:flex; align-items:center; justify-content:center;
+    font-size:13px; font-weight:700; font-family:'Inter',sans-serif;
+  }
+  .step-item p{ font-size:15px; color:var(--ink); padding-top:3px; }
+
+  footer{ background:var(--navy); color:var(--muted-on-dark); padding:36px 0; text-align:center; }
+  footer p{ font-size:12.5px; }
+  footer a{ color:var(--orange); }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="check">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+    </div>
+    <h1>Thank you! Your order is confirmed</h1>
+    <p>You just took the first step to selling with confidence. Your ebook and bonuses are ready below, welcome in.</p>
+  </div>
+</section>
+
+<section class="downloads">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Your downloads</div>
+      <h2>Get your files</h2>
+      <p>Save these to your phone so you can read anytime, even offline.</p>
+    </div>
+
+    <div class="download-card">
+      <div class="file-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></div>
+      <div class="download-info">
+        <h4>Irresistible Sales Formula</h4>
+        <p>Main ebook &middot; PDF</p>
+      </div>
+      <a href="#" class="btn-download" data-placeholder="ebook-pdf-url">Download</a>
+    </div>
+
+    <div class="download-card">
+      <div class="file-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></div>
+      <div class="download-info">
+        <h4>WhatsApp Status Sales Scripts</h4>
+        <p>Bonus &middot; PDF</p>
+      </div>
+      <a href="#" class="btn-download" data-placeholder="bonus1-pdf-url">Download</a>
+    </div>
+
+    <div class="download-card">
+      <div class="file-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></div>
+      <div class="download-info">
+        <h4>The Objection Buster</h4>
+        <p>Bonus &middot; PDF</p>
+      </div>
+      <a href="#" class="btn-download" data-placeholder="bonus2-pdf-url">Download</a>
+    </div>
+  </div>
+</section>
+
+<section class="community">
+  <div class="wrap">
+    <div class="community-card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+      <h3>Join the reader community</h3>
+      <p>Connect with other readers, ask questions, and get support as you apply what you learn.</p>
+      <a href="https://wa.link/dem9mf" target="_blank" rel="noopener" class="btn-primary">Join on WhatsApp &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="next-steps">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">What's next</div>
+      <h2>Your next 10 minutes</h2>
+    </div>
+    <div class="steps-list">
+      <div class="step-item"><div class="step-num">1</div><p>Download your ebook</p></div>
+      <div class="step-item"><div class="step-num">2</div><p>Download your two bonuses</p></div>
+      <div class="step-item"><div class="step-num">3</div><p>Join the WhatsApp community</p></div>
+      <div class="step-item"><div class="step-num">4</div><p>Start with Chapter 1 today</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2025 Chioma Gift. All rights reserved. &middot; Need help? <a href="https://wa.link/dem9mf" target="_blank" rel="noopener">Chat with us on WhatsApp</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

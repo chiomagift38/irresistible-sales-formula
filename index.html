@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Irresistible Sales Formula — Chioma Gift</title>
+<meta name="description" content="Discover the proven psychology, persuasive strategies, and practical marketing techniques that make customers trust your brand, choose you over the competition, and buy consistently, even without paid ads.">
+<meta property="og:title" content="Irresistible Sales Formula — Chioma Gift">
+<meta property="og:description" content="The psychology, persuasion, and organic marketing system for Nigerian entrepreneurs who sell on WhatsApp, Instagram, and word of mouth.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0F1B2D;
+    --navy-light:#16273D;
+    --navy-edge:#22344B;
+    --warm-white:#F7F3EC;
+    --paper:#FBF9F5;
+    --orange:#C4571F;
+    --orange-hot:#DE6B2C;
+    --ink:#1A2233;
+    --muted:#6E6459;
+    --muted-on-dark:#B9C2CE;
+    --line-on-dark:rgba(247,243,236,0.14);
+    --line-on-light:rgba(15,27,45,0.1);
+    --radius:4px;
+    --max:1120px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',sans-serif;
+    background:var(--warm-white);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    line-height:1.15;
+    letter-spacing:-0.01em;
+  }
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 24px;}
+  section{padding:88px 0;}
+  @media (max-width:640px){ section{padding:64px 0;} }
+
+  /* Eyebrow */
+  .eyebrow{
+    font-family:'Inter',sans-serif;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--orange);
+    margin-bottom:14px;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:'';
+    width:22px; height:1px;
+    background:var(--orange);
+    display:inline-block;
+  }
+
+  /* Buttons */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:16px 32px;
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+    font-size:16px;
+    border-radius:var(--radius);
+    border:1px solid transparent;
+    cursor:pointer;
+    transition:transform 220ms ease, background 220ms ease, box-shadow 220ms ease;
+    min-height:52px;
+  }
+  .btn-primary{
+    background:var(--orange);
+    color:var(--warm-white);
+    box-shadow:0 8px 24px -8px rgba(196,87,31,0.55);
+  }
+  .btn-primary:hover{ background:var(--orange-hot); transform:translateY(-2px); }
+  .btn-ghost{
+    background:transparent;
+    border-color:var(--line-on-dark);
+    color:var(--warm-white);
+  }
+  .btn-ghost:hover{ border-color:var(--orange); color:var(--orange); }
+  .btn-block{ width:100%; }
+
+  /* NAV */
+  header.site{
+    position:sticky; top:0; z-index:50;
+    background:rgba(15,27,45,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line-on-dark);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 24px; max-width:var(--max); margin:0 auto;
+  }
+  .brand{
+    font-family:'Fraunces',serif; color:var(--warm-white);
+    font-size:18px; font-weight:600; letter-spacing:0.01em;
+  }
+  .nav .btn{ padding:10px 20px; font-size:14px; min-height:auto; }
+
+  /* HERO */
+  .hero{
+    background:linear-gradient(175deg, var(--navy) 0%, var(--navy) 70%, var(--navy-light) 100%);
+    color:var(--warm-white);
+    padding:72px 0 96px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:'';
+    position:absolute; right:-10%; top:-20%;
+    width:520px; height:520px;
+    background:radial-gradient(circle, rgba(196,87,31,0.16) 0%, transparent 70%);
+    pointer-events:none;
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center;
+  }
+  @media (max-width:900px){ .hero-grid{ grid-template-columns:1fr; gap:40px; } }
+  .byline{
+    font-size:13px; color:var(--muted-on-dark); margin-bottom:22px;
+    display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+  }
+  .byline .dot{ width:4px; height:4px; border-radius:50%; background:var(--muted-on-dark); }
+  .hero h1{
+    font-size:clamp(34px, 5.2vw, 54px);
+    color:var(--warm-white);
+    margin-bottom:22px;
+  }
+  .hero h1 em{ font-style:normal; color:var(--orange); }
+  .hero p.sub{
+    font-size:18px; color:var(--muted-on-dark); max-width:520px; margin-bottom:34px;
+  }
+  .hero-cta-row{ display:flex; gap:16px; flex-wrap:wrap; align-items:center; }
+  .hero-note{ font-size:13px; color:var(--muted-on-dark); margin-top:14px; }
+  .hero-visual{
+    aspect-ratio:4/5;
+    border-radius:6px;
+    background:linear-gradient(160deg, var(--navy-light), var(--navy-edge));
+    border:1px solid var(--line-on-dark);
+    display:flex; align-items:center; justify-content:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-visual .ph-label{
+    position:absolute; bottom:16px; left:16px; right:16px;
+    font-size:11px; color:var(--muted-on-dark);
+    background:rgba(15,27,45,0.6);
+    padding:8px 12px; border-radius:3px;
+    border:1px dashed var(--line-on-dark);
+  }
+  .hero-visual .ph-icon{ opacity:0.5; width:64px; height:64px; }
+
+  /* PROBLEM */
+  .problem{ background:var(--warm-white); }
+  .section-head{ max-width:640px; margin-bottom:48px; }
+  .section-head h2{ font-size:clamp(26px,3.6vw,38px); color:var(--ink); }
+  .section-head p{ color:var(--muted); font-size:17px; margin-top:14px; }
+  .pain-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:1px;
+    background:var(--line-on-light);
+    border:1px solid var(--line-on-light);
+  }
+  @media (max-width:800px){ .pain-grid{ grid-template-columns:1fr; } }
+  .pain-card{
+    background:var(--paper); padding:32px 28px;
+  }
+  .pain-card svg{ width:28px; height:28px; color:var(--orange); margin-bottom:18px; }
+  .pain-card p{ font-size:15.5px; color:var(--ink); }
+
+  /* STORY — signature split panel */
+  .story{
+    background:var(--navy); color:var(--warm-white);
+  }
+  .split{
+    display:grid; grid-template-columns:1fr 1fr;
+    border-radius:6px; overflow:hidden;
+    border:1px solid var(--line-on-dark);
+  }
+  @media (max-width:760px){ .split{ grid-template-columns:1fr; } }
+  .split-side{ padding:40px 36px; }
+  .split-a{ background:var(--navy-light); border-right:1px solid var(--line-on-dark); }
+  .split-b{ background:linear-gradient(160deg, #2A1A10, #1D130B); }
+  @media (max-width:760px){ .split-a{ border-right:none; border-bottom:1px solid var(--line-on-dark); } }
+  .split-tag{
+    font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase;
+    margin-bottom:16px; display:inline-block; padding:4px 10px; border-radius:3px;
+  }
+  .split-a .split-tag{ background:rgba(247,243,236,0.08); color:var(--muted-on-dark); }
+  .split-b .split-tag{ background:rgba(196,87,31,0.2); color:#F0A876; }
+  .split h3{ font-size:22px; color:var(--warm-white); margin-bottom:14px; }
+  .split p{ color:var(--muted-on-dark); font-size:15.5px; }
+  .story-lede{ font-size:19px; color:var(--warm-white); max-width:640px; margin-bottom:40px; }
+  .story-lede strong{ color:var(--orange); font-weight:600; }
+
+  /* WHY FAIL */
+  .why-fail{ background:var(--paper); }
+  .fail-list{ display:grid; gap:0; max-width:760px; }
+  .fail-item{
+    display:flex; gap:20px; padding:22px 0;
+    border-bottom:1px solid var(--line-on-light);
+  }
+  .fail-item:first-child{ border-top:1px solid var(--line-on-light); }
+  .fail-x{
+    flex:0 0 auto; width:28px; height:28px; border-radius:50%;
+    border:1.5px solid var(--orange); color:var(--orange);
+    display:flex; align-items:center; justify-content:center;
+    font-size:14px; font-weight:700;
+  }
+  .fail-item h4{ font-size:17px; margin-bottom:4px; color:var(--ink); }
+  .fail-item p{ color:var(--muted); font-size:15px; }
+
+  /* SOLUTION INTRO */
+  .solution{ background:var(--navy); color:var(--warm-white); }
+  .solution-grid{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px; align-items:center; }
+  @media (max-width:900px){ .solution-grid{ grid-template-columns:1fr; } }
+  .cover-frame{
+    aspect-ratio:3/4.4;
+    background:linear-gradient(150deg, var(--navy-light), #0B131F);
+    border:1px solid var(--line-on-dark);
+    border-radius:6px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; padding:32px;
+    box-shadow:0 30px 60px -20px rgba(0,0,0,0.5);
+  }
+  .cover-frame .cover-eyebrow{ font-size:11px; letter-spacing:0.14em; color:var(--orange); text-transform:uppercase; margin-bottom:16px; }
+  .cover-frame h3{ font-family:'Fraunces',serif; font-size:26px; color:var(--warm-white); line-height:1.2; }
+  .cover-frame .cover-sub{ font-size:12.5px; color:var(--muted-on-dark); margin-top:14px; }
+  .cover-frame .cover-author{ margin-top:auto; padding-top:24px; font-size:12px; color:var(--muted-on-dark); border-top:1px dashed var(--line-on-dark); width:100%; }
+  .solution h2{ color:var(--warm-white); font-size:clamp(26px,3.6vw,36px); margin-bottom:18px; }
+  .solution p{ color:var(--muted-on-dark); font-size:16.5px; margin-bottom:16px; max-width:520px; }
+
+  /* BENEFITS */
+  .benefits{ background:var(--warm-white); }
+  .benefit-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+  @media (max-width:900px){ .benefit-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:560px){ .benefit-grid{ grid-template-columns:1fr; } }
+  .benefit-card{
+    background:var(--paper); border:1px solid var(--line-on-light);
+    padding:28px 22px; border-radius:5px;
+  }
+  .benefit-card svg{ width:26px; height:26px; color:var(--orange); margin-bottom:16px; }
+  .benefit-card h4{ font-size:16px; margin-bottom:8px; color:var(--ink); }
+  .benefit-card p{ font-size:14px; color:var(--muted); }
+
+  /* WHAT'S INSIDE / CHAPTERS */
+  .chapters{ background:var(--paper); }
+  .chapter-row{
+    display:grid; grid-template-columns:64px 1fr; gap:24px;
+    padding:28px 0; border-bottom:1px solid var(--line-on-light);
+    align-items:start;
+  }
+  .chapter-row:first-of-type{ border-top:1px solid var(--line-on-light); }
+  .chapter-num{
+    font-family:'Fraunces',serif; font-size:28px; color:var(--orange); font-weight:500;
+  }
+  .chapter-row h4{ font-size:19px; color:var(--ink); margin-bottom:8px; }
+  .chapter-row p{ font-size:15px; color:var(--muted); max-width:600px; }
+
+  /* BONUSES */
+  .bonuses{ background:var(--navy); color:var(--warm-white); }
+  .bonus-grid{ display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  @media (max-width:760px){ .bonus-grid{ grid-template-columns:1fr; } }
+  .bonus-card{
+    background:var(--navy-light); border:1px solid var(--line-on-dark);
+    border-radius:6px; padding:32px; position:relative; overflow:hidden;
+  }
+  .bonus-card::before{
+    content:'FREE BONUS';
+    position:absolute; top:18px; right:-34px;
+    background:var(--orange); color:var(--warm-white);
+    font-size:10px; font-weight:700; letter-spacing:0.08em;
+    padding:5px 40px; transform:rotate(35deg);
+  }
+  .bonus-card h4{ font-size:20px; color:var(--warm-white); margin:6px 0 10px; max-width:80%; }
+  .bonus-card p{ font-size:14.5px; color:var(--muted-on-dark); }
+  .bonus-value{ margin-top:18px; font-size:13px; color:var(--orange); font-weight:600; }
+
+  /* GUARANTEE */
+  .guarantee{ background:var(--warm-white); }
+  .guarantee-box{
+    max-width:760px; margin:0 auto; text-align:center;
+    padding:56px 40px; border:1.5px solid var(--orange);
+    border-radius:8px; background:var(--paper);
+  }
+  .guarantee-box svg{ width:44px; height:44px; color:var(--orange); margin:0 auto 20px; }
+  .guarantee-box h3{ font-size:24px; color:var(--ink); margin-bottom:14px; }
+  .guarantee-box p{ color:var(--muted); font-size:15.5px; max-width:520px; margin:0 auto; }
+
+  /* FAQ */
+  .faq{ background:var(--paper); }
+  .faq-list{ max-width:760px; }
+  .faq-item{ border-bottom:1px solid var(--line-on-light); }
+  .faq-item:first-child{ border-top:1px solid var(--line-on-light); }
+  .faq-q{
+    width:100%; text-align:left; background:none; border:none;
+    padding:22px 4px; font-family:'Inter',sans-serif; font-size:16px; font-weight:600;
+    color:var(--ink); display:flex; justify-content:space-between; align-items:center;
+    cursor:pointer;
+  }
+  .faq-q .plus{ transition:transform 220ms ease; color:var(--orange); font-size:20px; flex:0 0 auto; margin-left:16px;}
+  .faq-item.open .plus{ transform:rotate(45deg); }
+  .faq-a{
+    max-height:0; overflow:hidden; transition:max-height 320ms ease, padding 320ms ease;
+    padding:0 4px; font-size:15px; color:var(--muted);
+  }
+  .faq-item.open .faq-a{ max-height:220px; padding-bottom:22px; }
+
+  /* TESTIMONIALS */
+  .testimonials{ background:var(--navy); color:var(--warm-white); }
+  .testi-note{ font-size:13px; color:var(--muted-on-dark); margin-bottom:32px; max-width:520px; }
+  .testi-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  @media (max-width:800px){ .testi-grid{ grid-template-columns:1fr; } }
+  .testi-card{
+    background:var(--navy-light); border:1px solid var(--line-on-dark);
+    border-radius:6px; padding:26px;
+  }
+  .testi-card p{ font-size:14.5px; color:var(--muted-on-dark); font-style:italic; margin-bottom:20px; }
+  .testi-person{ display:flex; align-items:center; gap:12px; }
+  .testi-avatar{
+    width:38px; height:38px; border-radius:50%;
+    background:var(--navy-edge); border:1px dashed var(--line-on-dark);
+    display:flex; align-items:center; justify-content:center;
+    font-size:12px; color:var(--muted-on-dark); font-weight:600;
+  }
+  .testi-person .name{ font-size:13.5px; font-weight:600; color:var(--warm-white); }
+  .testi-person .tag{ font-size:11px; color:var(--orange); }
+
+  /* PRICING */
+  .pricing{ background:var(--warm-white); }
+  .price-card{
+    max-width:520px; margin:0 auto; text-align:center;
+    background:var(--navy); color:var(--warm-white);
+    border-radius:10px; padding:52px 40px;
+    box-shadow:0 40px 80px -30px rgba(15,27,45,0.4);
+  }
+  .price-card .eyebrow{ justify-content:center; }
+  .price-card h3{ font-size:24px; color:var(--warm-white); margin-bottom:6px; }
+  .price-amount{ font-family:'Fraunces',serif; font-size:56px; color:var(--orange); margin:18px 0 4px; }
+  .price-amount sup{ font-size:22px; top:-22px; }
+  .price-was{ font-size:14px; color:var(--muted-on-dark); text-decoration:line-through; margin-bottom:24px; }
+  .price-includes{ text-align:left; margin:28px 0; display:grid; gap:12px; }
+  .price-includes .line{ display:flex; gap:10px; font-size:14.5px; color:var(--muted-on-dark); }
+  .price-includes svg{ width:18px; height:18px; color:var(--orange); flex:0 0 auto; margin-top:2px; }
+  .price-includes strong{ color:var(--warm-white); }
+
+  /* FINAL CTA */
+  .final-cta{
+    background:linear-gradient(160deg, var(--orange) 0%, #A8461A 100%);
+    color:var(--warm-white); text-align:center;
+  }
+  .final-cta h2{ color:var(--warm-white); font-size:clamp(28px,4vw,42px); margin-bottom:16px; }
+  .final-cta p{ color:rgba(247,243,236,0.85); font-size:17px; max-width:520px; margin:0 auto 32px; }
+  .final-cta .btn-primary{ background:var(--navy); box-shadow:0 8px 24px -8px rgba(15,27,45,0.5); }
+  .final-cta .btn-primary:hover{ background:#0A1420; }
+
+  /* FOOTER */
+  footer{ background:var(--navy); color:var(--muted-on-dark); padding:48px 0 32px; }
+  .footer-grid{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px; padding-bottom:28px; border-bottom:1px solid var(--line-on-dark); }
+  .footer-brand{ font-family:'Fraunces',serif; color:var(--warm-white); font-size:17px; }
+  .footer-links{ display:flex; gap:24px; flex-wrap:wrap; font-size:13.5px; }
+  .footer-links a:hover{ color:var(--orange); }
+  .footer-bottom{ padding-top:24px; font-size:12.5px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+
+  /* Reveal animation */
+  .reveal{ opacity:0; transform:translateY(24px); transition:opacity 700ms ease, transform 700ms ease; }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+  .reveal-l{ transform:translateX(-24px); }
+  .reveal-l.in{ transform:translateX(0); }
+  .reveal-r{ transform:translateX(24px); }
+  .reveal-r.in{ transform:translateX(0); }
+
+  @media (prefers-reduced-motion: reduce){
+    .reveal{ opacity:1; transform:none; transition:none; }
+    html{ scroll-behavior:auto; }
+  }
+
+  :focus-visible{ outline:2px solid var(--orange); outline-offset:3px; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <div class="brand">Irresistible Sales Formula</div>
+    <a href="#pricing" class="btn btn-ghost">Get the book</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="byline">
+        <span>By Chioma Gift</span>
+        <span class="dot"></span>
+        <span>Published March 26, 2025</span>
+      </div>
+      <h1>Make customers <em>trust you</em>, choose you, and buy consistently</h1>
+      <p class="sub">The psychology, persuasion, and organic marketing system built for Nigerian entrepreneurs who sell on WhatsApp, Instagram, and word of mouth, without spending a naira on ads.</p>
+      <div class="hero-cta-row">
+        <a href="#pricing" class="btn btn-primary">Get the ebook &rarr;</a>
+        <a href="#chapters" class="btn btn-ghost">See what's inside</a>
+      </div>
+      <p class="hero-note">Instant PDF download &middot; 7-day money-back guarantee</p>
+    </div>
+    <div class="hero-visual reveal reveal-r">
+      <svg class="ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 8h8M8 12h8M8 16h4"/></svg>
+      <div class="ph-label">Placeholder: hero photo, realistic editorial shot of a Nigerian vendor confidently serving a customer. Final image pending File 05.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">The problem</div>
+      <h2>You have a good product. So why does selling still feel this hard?</h2>
+      <p>If any of this sounds familiar, you are not doing anything wrong, you are missing a skill nobody taught you.</p>
+    </div>
+    <div class="pain-grid reveal">
+      <div class="pain-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2v20M17 6H9.5a2.5 2.5 0 000 5H14a2.5 2.5 0 010 5H7"/></svg>
+        <p>People ask for your price, go quiet, and never come back to buy.</p>
+      </div>
+      <div class="pain-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
+        <p>Customers keep comparing your price to competitors instead of seeing your value.</p>
+      </div>
+      <div class="pain-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        <p>Sales come occasionally, not consistently, and you can't explain why.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Why this happens</div>
+      <p class="story-lede">Two sellers can offer the <strong>exact same product</strong> at the <strong>exact same price</strong>, and one of them will sell far more. The difference is never the product. It's the offer, and the trust built around it.</p>
+    </div>
+    <div class="split reveal">
+      <div class="split-side split-a">
+        <span class="split-tag">Seller one</span>
+        <h3>"Buy my product. It's the best."</h3>
+        <p>One photo, one caption, no story, no proof, no reason to choose them over anyone else selling the same thing. Customers ask the price and disappear.</p>
+      </div>
+      <div class="split-side split-b">
+        <span class="split-tag">Seller two</span>
+        <h3>Tells the story. Shows the proof. Removes the risk.</h3>
+        <p>Same product. But they explain the customer's problem, show how it gets solved, share real feedback, and back it with a guarantee. They close more sales, consistently.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY MOST SOLUTIONS FAIL -->
+<section class="why-fail">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Before you try another "fix"</div>
+      <h2>Why the usual advice doesn't work</h2>
+    </div>
+    <div class="fail-list reveal">
+      <div class="fail-item">
+        <div class="fail-x">&times;</div>
+        <div><h4>Paid ads without trust</h4><p>Ads can bring eyes to your page, but if nothing on it builds trust, you just pay to lose money faster.</p></div>
+      </div>
+      <div class="fail-item">
+        <div class="fail-x">&times;</div>
+        <div><h4>Dropping your price</h4><p>Competing on price attracts bargain hunters who leave the moment they find something cheaper.</p></div>
+      </div>
+      <div class="fail-item">
+        <div class="fail-x">&times;</div>
+        <div><h4>Posting louder, not smarter</h4><p>More posts without a better offer or message just means more people scrolling past you faster.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION INTRO -->
+<section class="solution">
+  <div class="wrap solution-grid">
+    <div class="cover-frame reveal reveal-l">
+      <div class="cover-eyebrow">Digital Ebook</div>
+      <h3>Irresistible Sales Formula</h3>
+      <p class="cover-sub">Placeholder cover, final design pending File 05</p>
+      <div class="cover-author">By Chioma Gift</div>
+    </div>
+    <div class="reveal reveal-r">
+      <div class="eyebrow">The solution</div>
+      <h2>A practical system for selling the way Nigerians actually buy</h2>
+      <p>Irresistible Sales Formula is a short, practical ebook built around real Nigerian selling environments: WhatsApp Status, price-haggling culture, and word-of-mouth trust. No jargon, no theory-heavy chapters, just what to say and do next.</p>
+      <p>Every chapter ends with clear action steps so you're not just reading, you're applying it to your business the same day.</p>
+      <a href="#chapters" class="btn btn-ghost" style="margin-top:8px;">See the full chapter list &darr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">What you'll walk away with</div>
+      <h2>Four skills. One consistent result: more sales.</h2>
+    </div>
+    <div class="benefit-grid reveal">
+      <div class="benefit-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l2.4 6.9L21 11l-6.6 2.1L12 20l-2.4-6.9L3 11l6.6-2.1z"/></svg>
+        <h4>Build offers people can't refuse</h4>
+        <p>Turn a plain product description into a clear promise customers act on immediately.</p>
+      </div>
+      <div class="benefit-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21c-4-3-8-6-8-11a4 4 0 018-2 4 4 0 018 2c0 5-4 8-8 11z"/></svg>
+        <h4>Persuade without sounding pushy</h4>
+        <p>Understand exactly why people buy, then remove the fear that's stopping them.</p>
+      </div>
+      <div class="benefit-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 4v16h16M8 15l3-3 3 3 5-6"/></svg>
+        <h4>Attract customers with zero ad budget</h4>
+        <p>Use WhatsApp Status, content, and referrals to build steady, free attention.</p>
+      </div>
+      <div class="benefit-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M17 21v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2M11 3a4 4 0 110 8 4 4 0 010-8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        <h4>Turn buyers into repeat customers</h4>
+        <p>Build the kind of follow-up and service that earns referrals, not just one-time sales.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTERS -->
+<section class="chapters" id="chapters">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">What's inside</div>
+      <h2>4 chapters. Practical from page one.</h2>
+      <p>Plus an introduction and a conclusion that turns everything into a simple action plan.</p>
+    </div>
+    <div class="reveal">
+      <div class="chapter-row">
+        <div class="chapter-num">01</div>
+        <div><h4>Build an Offer Customers Can't Refuse</h4><p>Identify your ideal customer, their real pain points, and craft a value proposition that makes you the obvious choice, not just another option.</p></div>
+      </div>
+      <div class="chapter-row">
+        <div class="chapter-num">02</div>
+        <div><h4>Master the Psychology of Persuasion</h4><p>Learn why people actually buy, how to build trust fast, use honest social proof, and create genuine urgency without gimmicks.</p></div>
+      </div>
+      <div class="chapter-row">
+        <div class="chapter-num">03</div>
+        <div><h4>Attract Customers Without Paid Ads</h4><p>Turn WhatsApp Status, content, and community presence into a steady stream of interested buyers, at zero cost.</p></div>
+      </div>
+      <div class="chapter-row">
+        <div class="chapter-num">04</div>
+        <div><h4>Convert Prospects into Loyal Customers</h4><p>Handle objections calmly, follow up the right way, and deliver an experience that earns referrals and repeat orders.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BONUSES -->
+<section class="bonuses">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Included free with your order</div>
+      <h2>Two bonuses to help you apply it immediately</h2>
+    </div>
+    <div class="bonus-grid reveal">
+      <div class="bonus-card">
+        <h4>WhatsApp Status Sales Scripts</h4>
+        <p>30 ready-to-post WhatsApp Status templates that turn casual viewers into paying customers, no copywriting skill needed.</p>
+        <div class="bonus-value">Delivered as a PDF</div>
+      </div>
+      <div class="bonus-card">
+        <h4>The Objection Buster</h4>
+        <p>Word-for-word responses to the price and trust objections Nigerian buyers raise most often, so you never freeze up mid-chat again.</p>
+        <div class="bonus-value">Delivered as a PDF</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="guarantee">
+  <div class="wrap">
+    <div class="guarantee-box reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+      <h3>Your 7-day money-back guarantee</h3>
+      <p>Go through the book, apply what you learn. If you don't feel it was worth it within 7 days of purchase, message us and get a full refund. No hard questions asked.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Questions</div>
+      <h2>Before you get started</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q">Will this work for my type of business? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Yes. The principles apply to physical products, digital products, and services alike. Every chapter uses examples from everyday Nigerian businesses so you can apply them directly.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">I've read sales books before and nothing changed. Why would this be different? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Most sales books are theory-heavy. This one ends every chapter with clear action steps, so you're applying what you read to your own business the same day, not just collecting ideas.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do I need a big following or an advertising budget? <span class="plus">+</span></button>
+        <div class="faq-a"><p>No. Chapter 3 is built entirely around attracting customers using WhatsApp, content, and referrals, without spending on ads.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How do I receive the ebook after payment? <span class="plus">+</span></button>
+        <div class="faq-a"><p>You'll get instant access to download the ebook and both bonuses as PDF files right after checkout, plus a link to join our WhatsApp support community.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What if I'm not satisfied? <span class="plus">+</span></button>
+        <div class="faq-a"><p>You're covered by a 7-day money-back guarantee. If it's not for you, message us for a full refund.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">What readers say</div>
+      <h2>Real feedback, coming soon</h2>
+    </div>
+    <p class="testi-note">These are placeholder testimonials. They will be replaced with real reader feedback once collected after launch.</p>
+    <div class="testi-grid reveal">
+      <div class="testi-card">
+        <p>"I started using the offer formula in chapter one and customers stopped asking me to reduce my price."</p>
+        <div class="testi-person">
+          <div class="testi-avatar">R</div>
+          <div><div class="name">Reader, placeholder</div><div class="tag">Online vendor</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <p>"The WhatsApp Status scripts alone were worth it. I finally know what to post that actually gets replies."</p>
+        <div class="testi-person">
+          <div class="testi-avatar">R</div>
+          <div><div class="name">Reader, placeholder</div><div class="tag">Small business owner</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <p>"Simple, practical, no long grammar. I applied chapter four the same week and got two repeat orders."</p>
+        <div class="testi-person">
+          <div class="testi-avatar">R</div>
+          <div><div class="name">Reader, placeholder</div><div class="tag">Freelancer</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="price-card reveal">
+      <div class="eyebrow">Get instant access</div>
+      <h3>Irresistible Sales Formula</h3>
+      <div class="price-amount"><sup>&#8358;</sup>5,500</div>
+      <div class="price-was">Regular price &#8358;7,500</div>
+      <div class="price-includes">
+        <div class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span><strong>The full ebook</strong>, instant PDF download</span></div>
+        <div class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Bonus:</strong> WhatsApp Status Sales Scripts</span></div>
+        <div class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Bonus:</strong> The Objection Buster</span></div>
+        <div class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span><strong>7-day</strong> money-back guarantee</span></div>
+        <div class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>Access to our <strong>WhatsApp</strong> reader community</span></div>
+      </div>
+      <a href="#" class="btn btn-primary btn-block" data-placeholder="selar-checkout-url">Buy now on Selar &rarr;</a>
+      <p class="hero-note" style="margin-top:14px;">Secure checkout &middot; Instant delivery</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="wrap reveal">
+    <h2>Stop hoping for sales. Start earning them consistently.</h2>
+    <p>Everything you need to build trust, persuade honestly, and sell without ads is inside, for &#8358;5,500.</p>
+    <a href="#pricing" class="btn btn-primary">Get the ebook now &rarr;</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">Irresistible Sales Formula</div>
+      <div class="footer-links">
+        <a href="#chapters">What's inside</a>
+        <a href="#pricing">Pricing</a>
+        <a href="https://wa.link/dem9mf" target="_blank" rel="noopener">WhatsApp Support</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Chioma Gift. All rights reserved.</span>
+      <span>Questions? <a href="https://wa.link/dem9mf" target="_blank" rel="noopener" style="color:var(--orange);">Chat with us on WhatsApp</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.15});
+  revealEls.forEach(el=>io.observe(el));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const item = btn.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+      if(!wasOpen) item.classList.add('open');
+    });
+  });
+</script>
+
+</body>
+</html>

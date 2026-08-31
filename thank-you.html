@@ -72,17 +72,20 @@
     border-radius:6px; padding:20px; margin-bottom:14px;
   }
   .file-icon{
-    flex:0 0 auto; width:46px; height:46px; border-radius:6px;
+    
     background:var(--navy); display:flex; align-items:center; justify-content:center;
+
+    width: 40px;
+    height: 56px;
+    border-radius: 4px;
+    flex-shrink: 0;
+    box-shadow: 0 6px 14px rgba(46, 32, 22, 0.18);
+    overflow: hidden;
   }
-  .file-icon svg{ width:22px; height:22px; color:var(--orange); }
-  .download-info{ flex:1; min-width:0; }
-  .download-info h4{ font-size:15.5px; color:var(--ink); margin-bottom:2px; }
-  .download-info p{ font-size:12.5px; color:var(--muted); }
-  .btn-download{
-    flex:0 0 auto; padding:11px 20px; background:var(--orange); color:var(--warm-white);
-    border-radius:4px; font-size:13.5px; font-weight:600; white-space:nowrap;
-    transition:background 200ms ease;
+  .file-icon img{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .btn-download:hover{ background:var(--orange-hot); }
   @media (max-width:520px){
@@ -148,7 +151,7 @@
     </div>
 
     <div class="download-card">
-      <div class="file-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></div>
+      <div class="file-icon"><img src="images/irrestible-sales-strategy.jpg" alt="Ebook cover"></div>
       <div class="download-info">
         <h4>Irresistible Sales Formula</h4>
         <p>Main ebook &middot; PDF</p>
@@ -157,7 +160,7 @@
     </div>
 
     <div class="download-card">
-      <div class="file-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></div>
+      <div class="file-icon"><img src="images/bonus-1.jpg" alt="Whatsapp status sales script cover"></div>
       <div class="download-info">
         <h4>WhatsApp Status Sales Scripts</h4>
         <p>Bonus &middot; PDF</p>
@@ -166,7 +169,7 @@
     </div>
 
     <div class="download-card">
-      <div class="file-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></div>
+      <div class="file-icon"><img src="images/bonus-2.jpg" alt="The objection buster cover"></div>
       <div class="download-info">
         <h4>The Objection Buster</h4>
         <p>Bonus &middot; PDF</p>

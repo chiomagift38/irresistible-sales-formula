@@ -405,9 +405,9 @@
   <div class="wrap hero-grid">
     <div>
       <div class="byline">
-        <span>By Chioma Gift</span>
+        <span>Published by Chioma Gift</span>
         <span class="dot"></span>
-        <span>Published March 26, 2025</span>
+        <span> On March 26, 2025</span>
       </div>
       <h1>Make customers <em>trust you</em>, choose you, and buy consistently</h1>
       <p class="sub">The psychology, persuasion, and organic marketing system built for Nigerian entrepreneurs who sell on WhatsApp, Instagram, and word of mouth, without spending a naira on ads.</p>
@@ -725,12 +725,16 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; Irresistible Sales Formula. All rights reserved.</span>
+      <span id="current-year"></span>
     </div>
   </div>
 </footer>
 
 <script>
+  // Dynamic copyright year
+  document.getElementById('current-year').innerHTML =
+    '&copy; ' + new Date().getFullYear() + ' Irresistible Sales Formula. All rights reserved.';
+  
   // Scroll reveal
   const revealEls = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries)=>{
